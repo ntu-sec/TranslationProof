@@ -10,7 +10,7 @@ public class FieldPolicy {
     private TreeMap<ItemKey, ExtendedLevel> _ft;
 
     public FieldPolicy() {
-        _ft = new TreeMap<ItemKey, ExtendedLevel>();
+        _ft = new TreeMap<>();
     }
 
     public static FieldPolicy read(InputStream isr, LevelPool lvl_pool) {
@@ -52,7 +52,7 @@ public class FieldPolicy {
         }
 
         public boolean equals(ItemKey another) {
-            return ((_class_name == another._class_name) && (_name == another._name));
+            return _class_name.equals(another._class_name) && _name.equals(another._name);
         }
 
         public int compareTo(ItemKey another) {

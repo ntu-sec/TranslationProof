@@ -89,12 +89,7 @@ public abstract class ExtendedLevel {
         }
 
         public String toString() {
-            StringBuilder sb = new StringBuilder();
-            sb.append(_lvl.toString());
-            sb.append('[');
-            sb.append(_content.toString());
-            sb.append(']');
-            return sb.toString();
+            return _lvl.toString() + '[' + _content.toString() + ']';
         }
     }
 }

@@ -1,6 +1,5 @@
-*.cmo
-*.cmi
-
 ._bcdi/
+._ncdi
 ._d/
-custom_dx
+debug.out
+*.bin

@@ -1,4 +1,4 @@
-RESULT = custom_dx
+RESULT = tp.bin
 SOURCES = \
   map_type.mli map_type.ml \
   utility.mli utility.ml \
@@ -24,6 +24,6 @@ SOURCES = \
   Translation/translate_java_program.mli Translation/translate_java_program.ml \
   Translation/consolidate_block.mli Translation/consolidate_block.ml \
   main.ml
-  
+all: byte-code
 OCAMLMAKEFILE = OCamlMakefile
 include $(OCAMLMAKEFILE)  

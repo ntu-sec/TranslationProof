@@ -44,8 +44,6 @@ public class DexCertReader {
             FileInputStream isr = new FileInputStream(file);
             cc = execute(isr);
 
-        } catch (FileNotFoundException fnfe) {
-            fnfe.printStackTrace();
         } catch (IOException ioe) {
             ioe.printStackTrace();
         }
