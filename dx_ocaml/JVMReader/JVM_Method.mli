@@ -1,0 +1,12 @@
+type t;;
+type methodMap = (t Map_type.StringMap.t) Map_type.StringMap.t;;
+val reads : Map_type.constantMap -> in_channel -> (int * methodMap);;
+val name : t -> string;;
+val desc : t -> string;;
+val insnList : t -> Instructions.JVM.JVM_Instruction.t list;;
+val insnMap : t -> Instructions.JVM.JVM_Instruction.t Map_type.Int32Map.t;;
+val maxLabel : t -> int;;
+val maxStack : t -> int;;
+val handlers : t -> Handler.t list;;
+val localN : t -> int;;
+val isStatic : t -> bool;;

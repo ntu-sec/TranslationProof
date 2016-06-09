@@ -1,0 +1,89 @@
+Processing 'SampleCDR.dex'...
+Opened 'SampleCDR.dex', DEX version '035'
+Class #0 header:
+class_idx           : 1
+access_flags        : 1 (0x0001)
+superclass_idx      : 2
+interfaces_off      : 0 (0x000000)
+source_file_idx     : 4
+annotations_off     : 0 (0x000000)
+class_data_off      : 441 (0x0001b9)
+static_fields_size  : 0
+instance_fields_size: 0
+direct_methods_size : 1
+virtual_methods_size: 1
+
+Class #0            -
+  Class descriptor  : 'LSampleCDR;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+  Direct methods    -
+    #0              : (in LSampleCDR;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 1
+      insns size    : 6 16-bit code units
+0000f4:                                        |[0000f4] SampleCDR.<init>:()V
+000104: 0720                                   |0000: move-object v0, v2
+000106: 0701                                   |0001: move-object v1, v0
+000108: 7010 0200 0100                         |0002: invoke-direct {v1}, Ljava/lang/Object;.<init>:()V // method@0002
+00010e: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=1
+      locals        : 
+        0x0000 - 0x0006 reg=2 this LSampleCDR; 
+
+  Virtual methods   -
+    #0              : (in LSampleCDR;)
+      name          : 'sample'
+      type          : '(II)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 9
+      ins           : 3
+      outs          : 0
+      insns size    : 26 16-bit code units
+000110:                                        |[000110] SampleCDR.sample:(II)V
+000120: 0760                                   |0000: move-object v0, v6
+000122: 0171                                   |0001: move v1, v7
+000124: 0182                                   |0002: move v2, v8
+000126: 1204                                   |0003: const/4 v4, #int 0 // #0
+000128: 0143                                   |0004: move v3, v4
+00012a: 0114                                   |0005: move v4, v1
+00012c: 3d04 1300                              |0006: if-lez v4, 0019 // +0013
+000130: 0134                                   |0008: move v4, v3
+000132: 0125                                   |0009: move v5, v2
+000134: b054                                   |000a: add-int/2addr v4, v5
+000136: 0143                                   |000b: move v3, v4
+000138: 0114                                   |000c: move v4, v1
+00013a: 1225                                   |000d: const/4 v5, #int 2 // #2
+00013c: dc04 0402                              |000e: rem-int/lit8 v4, v4, #int 2 // #02
+000140: 3904 0600                              |0010: if-nez v4, 0016 // +0006
+000144: 0134                                   |0012: move v4, v3
+000146: 0115                                   |0013: move v5, v1
+000148: b154                                   |0014: sub-int/2addr v4, v5
+00014a: 0143                                   |0015: move v3, v4
+00014c: d801 01ff                              |0016: add-int/lit8 v1, v1, #int -1 // #ff
+000150: 28ed                                   |0018: goto 0005 // -0013
+000152: 0e00                                   |0019: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=5
+        0x0005 line=6
+        0x0008 line=8
+        0x000c line=9
+        0x0016 line=6
+        0x0019 line=11
+      locals        : 
+        0x0000 - 0x001a reg=6 this LSampleCDR; 
+
+  source_file_idx   : 4 (SampleCDR.java)
+

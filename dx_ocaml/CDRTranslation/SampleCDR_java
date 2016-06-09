@@ -1,0 +1,73 @@
+Compiled from "SampleCDR.java"
+public class SampleCDR extends java.lang.Object
+  SourceFile: "SampleCDR.java"
+  minor version: 0
+  major version: 50
+  Constant pool:
+const #1 = Method	#3.#13;	//  java/lang/Object."<init>":()V
+const #2 = class	#14;	//  SampleCDR
+const #3 = class	#15;	//  java/lang/Object
+const #4 = Asciz	<init>;
+const #5 = Asciz	()V;
+const #6 = Asciz	Code;
+const #7 = Asciz	LineNumberTable;
+const #8 = Asciz	sample;
+const #9 = Asciz	(II)V;
+const #10 = Asciz	StackMapTable;
+const #11 = Asciz	SourceFile;
+const #12 = Asciz	SampleCDR.java;
+const #13 = NameAndType	#4:#5;//  "<init>":()V
+const #14 = Asciz	SampleCDR;
+const #15 = Asciz	java/lang/Object;
+
+{
+public SampleCDR();
+  Code:
+   Stack=1, Locals=1, Args_size=1
+   0:	aload_0
+   1:	invokespecial	#1; //Method java/lang/Object."<init>":()V
+   4:	return
+  LineNumberTable: 
+   line 1: 0
+
+
+public void sample(int, int);
+  Code:
+   Stack=2, Locals=4, Args_size=3
+   0:	iconst_0
+   1:	istore_3
+   2:	iload_1
+   3:	ifle	26
+   6:	iload_3
+   7:	iload_2
+   8:	iadd
+   9:	istore_3
+   10:	iload_1
+   11:	iconst_2
+   12:	irem
+   13:	ifne	20
+   16:	iload_3
+   17:	iload_1
+   18:	isub
+   19:	istore_3
+   20:	iinc	1, -1
+   23:	goto	2
+   26:	return
+  LineNumberTable: 
+   line 5: 0
+   line 6: 2
+   line 8: 6
+   line 9: 10
+   line 6: 20
+   line 11: 26
+
+  StackMapTable: number_of_entries = 3
+   frame_type = 252 /* append */
+     offset_delta = 2
+     locals = [ int ]
+   frame_type = 17 /* same */
+   frame_type = 5 /* same */
+
+
+}
+

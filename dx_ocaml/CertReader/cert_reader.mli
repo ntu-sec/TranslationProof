@@ -1,0 +1,1 @@
+val read_certificate : string -> in_channel -> Certificate.JVM_Cert.t
