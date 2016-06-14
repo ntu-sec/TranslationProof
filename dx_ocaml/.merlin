@@ -1,9 +1,11 @@
+S .
 S CertReader
 S JVMReader
 S Translation
 S TypeInference
 
-B CertReader
-B JVMReader
-B Translation
-B TypeInference
+B _build
+B _build/CertReader
+B _build/JVMReader
+B _build/Translation
+B _build/TypeInference

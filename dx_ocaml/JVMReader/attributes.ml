@@ -293,7 +293,7 @@ let read_codeAttribute (pool:constantMap) (ic:in_channel) =
 
 let read_code (pool : constantMap) (ic:in_channel) =
   let n = readInt(ic) in
-  let arr = Array.create (n) (0) in
+  let arr = Array.make (n) (0) in
   let accept_byte arr i chr = arr.(i) <- (Char.code chr) in
   for i = 0 to (n - 1) do
     Scanf.fscanf ic "%c" (accept_byte arr i);

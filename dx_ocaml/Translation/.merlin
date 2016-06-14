@@ -1,9 +1,0 @@
-S ../JVMReader
-S ../CertReader
-S ../TypeInference
-S ../
-
-B ../JVMReader
-B ../CertReader
-B ../TypeInference
-B ../

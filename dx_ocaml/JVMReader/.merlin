@@ -1,9 +1,0 @@
-S ../Translation
-S ../CertReader
-S ../TypeInference
-S ../
-
-B ../Translation
-B ../CertReader
-B ../TypeInference
-B ../
